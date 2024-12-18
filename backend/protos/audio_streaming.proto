@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+service AudioService {
+    rpc GetAudioStream (AudioRequest) returns (stream AudioChunk);
+}
+
+message AudioRequest {
+    string audio_path = 1;
+}
+
+message AudioChunk {
+    bytes audio_data = 1;
+    int32 chunk_sequence = 2;
+    bool is_last_chunk = 3;
+}
+

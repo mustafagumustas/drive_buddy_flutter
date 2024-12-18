@@ -16,7 +16,7 @@ class AudioPlaybackHandler {
     _webSocketService.connect();
 
     // Initialize the PCM audio system
-    FlutterPcmSound.setup(sampleRate: 22050, channelCount: 1).then((_) {
+    FlutterPcmSound.setup(sampleRate: 24000, channelCount: 1).then((_) {
       FlutterPcmSound.setFeedThreshold(8000);
       FlutterPcmSound.setFeedCallback(_feedPcmData);
     });

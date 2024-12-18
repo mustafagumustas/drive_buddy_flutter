@@ -1,0 +1,54 @@
+2024-09-26 14:20:14.229 +03 [7009] LOG:  starting PostgreSQL 16.3 on x86_64-apple-darwin20.6.0, compiled by Apple clang version 12.0.5 (clang-1205.0.22.9), 64-bit
+2024-09-26 14:20:14.233 +03 [7009] LOG:  listening on IPv6 address "::1", port 5432
+2024-09-26 14:20:14.233 +03 [7009] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-09-26 14:20:14.234 +03 [7009] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-09-26 14:20:14.235 +03 [7012] LOG:  database system was shut down at 2024-09-26 14:20:09 +03
+2024-09-26 14:20:14.237 +03 [7009] LOG:  database system is ready to accept connections
+2024-09-26 14:20:39.871 +03 [7347] FATAL:  role "postgres" does not exist
+2024-09-26 14:20:44.923 +03 [7373] FATAL:  database "asyacora" does not exist
+2024-09-26 14:21:14.241 +03 [7009] LOG:  could not open file "postmaster.pid": No such file or directory
+2024-09-26 14:21:14.241 +03 [7009] LOG:  performing immediate shutdown because data directory lock file is invalid
+2024-09-26 14:21:14.241 +03 [7009] LOG:  received immediate shutdown request
+2024-09-26 14:21:14.241 +03 [7009] LOG:  could not open file "postmaster.pid": No such file or directory
+2024-09-26 14:21:14.243 +03 [7009] LOG:  database system is shut down
+2024-09-26 14:25:00.495 +03 [8791] LOG:  starting PostgreSQL 16.3 on x86_64-apple-darwin20.6.0, compiled by Apple clang version 12.0.5 (clang-1205.0.22.9), 64-bit
+2024-09-26 14:25:00.497 +03 [8791] LOG:  listening on IPv6 address "::1", port 5432
+2024-09-26 14:25:00.497 +03 [8791] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-09-26 14:25:00.498 +03 [8791] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-09-26 14:25:00.503 +03 [8794] LOG:  database system was shut down at 2024-09-26 14:24:35 +03
+2024-09-26 14:25:00.514 +03 [8791] LOG:  database system is ready to accept connections
+2024-09-26 14:25:23.570 +03 [8877] FATAL:  role "postgres" does not exist
+2024-09-26 14:25:28.729 +03 [8905] FATAL:  database "asyacora" does not exist
+2024-09-26 14:26:31.375 +03 [9100] FATAL:  database "asyacora" does not exist
+2024-09-26 14:28:06.849 +03 [9359] FATAL:  database "asyacora" does not exist
+/Library/PostgreSQL/16/bin/postgres: illegal option -- U
+Try "postgres --help" for more information.
+2024-09-26 14:30:00.504 +03 [8792] LOG:  checkpoint starting: time
+2024-09-26 14:30:04.793 +03 [8792] LOG:  checkpoint complete: wrote 45 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.282 s, sync=0.003 s, total=4.290 s; sync files=11, longest=0.001 s, average=0.001 s; distance=268 kB, estimate=268 kB; lsn=0/15461C8, redo lsn=0/1546190
+2024-09-26 14:30:07.296 +03 [9715] FATAL:  role "postgres" does not exist
+2024-09-26 14:30:18.760 +03 [9758] FATAL:  role "postgres" does not exist
+2024-09-26 14:32:05.495 +03 [9810] ERROR:  role "asyacora" already exists
+2024-09-26 14:32:05.495 +03 [9810] STATEMENT:  CREATE ROLE asyacora WITH LOGIN PASSWORD '1234';
+2024-09-26 14:33:00.292 +03 [9810] ERROR:  syntax error at or near "PRIVELEGES" at character 11
+2024-09-26 14:33:00.292 +03 [9810] STATEMENT:  GRANT ALL PRIVELEGES ON DATABASE drive_buddy TO asyacora;
+2024-09-26 14:35:00.796 +03 [8792] LOG:  checkpoint starting: time
+2024-09-26 14:36:35.609 +03 [8792] LOG:  checkpoint complete: wrote 938 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=94.799 s, sync=0.012 s, total=94.814 s; sync files=300, longest=0.001 s, average=0.001 s; distance=4316 kB, estimate=4316 kB; lsn=0/197D2B8, redo lsn=0/197D280
+2024-09-26 14:45:00.616 +03 [8792] LOG:  checkpoint starting: time
+2024-09-26 14:45:11.981 +03 [8792] LOG:  checkpoint complete: wrote 113 buffers (0.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=11.353 s, sync=0.005 s, total=11.366 s; sync files=98, longest=0.001 s, average=0.001 s; distance=478 kB, estimate=3932 kB; lsn=0/19F6C28, redo lsn=0/19F4C88
+2024-09-26 14:47:02.144 +03 [12649] FATAL:  role "postgres" does not exist
+2024-09-26 14:47:02.149 +03 [12650] FATAL:  role "postgres" does not exist
+2024-09-26 14:50:00.985 +03 [8792] LOG:  checkpoint starting: time
+2024-09-26 14:50:03.438 +03 [8792] LOG:  checkpoint complete: wrote 25 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.442 s, sync=0.003 s, total=2.454 s; sync files=17, longest=0.001 s, average=0.001 s; distance=10 kB, estimate=3540 kB; lsn=0/19F7670, redo lsn=0/19F7638
+2024-09-26 14:50:32.801 +03 [13186] FATAL:  database "asyacora" does not exist
+2024-09-26 14:51:02.231 +03 [13221] ERROR:  role "postgres" already exists
+2024-09-26 14:51:02.231 +03 [13221] STATEMENT:  CREATE ROLE postgres WITH LOGIN SUPERUSER PASSWORD '1234';
+2024-09-26 14:55:00.449 +03 [8792] LOG:  checkpoint starting: time
+2024-09-26 14:55:01.111 +03 [8792] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.527 s, sync=0.001 s, total=0.666 s; sync files=6, longest=0.001 s, average=0.001 s; distance=3 kB, estimate=3186 kB; lsn=0/19F85A0, redo lsn=0/19F8568
+2024-09-26 16:55:00.160 +03 [8792] LOG:  checkpoint starting: time
+2024-09-26 16:55:01.005 +03 [8792] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.829 s, sync=0.001 s, total=0.847 s; sync files=9, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=2868 kB; lsn=0/19F8B68, redo lsn=0/19F8B30
+2024-09-28 20:11:49.756 +03 [8792] LOG:  checkpoint starting: time
+2024-09-28 20:11:50.387 +03 [8792] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.619 s, sync=0.001 s, total=0.632 s; sync files=7, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=2581 kB; lsn=0/19F92B8, redo lsn=0/19F9280
+2024-09-28 20:16:49.389 +03 [8792] LOG:  checkpoint starting: time
+2024-09-28 20:16:50.319 +03 [8792] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.917 s, sync=0.001 s, total=0.931 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4 kB, estimate=2323 kB; lsn=0/19FA2F0, redo lsn=0/19FA2B8
+2024-09-28 20:26:49.322 +03 [8792] LOG:  checkpoint starting: time
+2024-09-28 20:26:49.838 +03 [8792] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.511 s, sync=0.001 s, total=0.517 s; sync files=6, longest=0.001 s, average=0.001 s; distance=3 kB, estimate=2091 kB; lsn=0/19FAF80, redo lsn=0/19FAF48

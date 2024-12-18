@@ -4,7 +4,7 @@ import 'package:web_socket_channel/status.dart' as status;
 import 'package:logging/logging.dart';
 
 class WebSocketService {
-  final String uri = 'ws://192.168.1.7:8080'; // Default WebSocket server URI
+  final String uri = 'ws://172.23.13.58:8080'; // Default WebSocket server URI
   WebSocketChannel? _channel;
   final Logger _logger = Logger('WebSocketService');
 

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "react-native-audio": "^4.3.0"
+  }
+}
